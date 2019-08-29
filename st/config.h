@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /*static char *font = "Source Code Pro Medium:pixelsize=12:antialias=true:autohint=true";*/
-static char *font = "Fira Code:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Tewi:pixelsize=10:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
@@ -122,10 +122,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 7;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 8;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

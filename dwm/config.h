@@ -4,28 +4,28 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Tewi:size=9",
+	"Tewi:size=10",
 	"Fira Code:size=10",
 	"Siji:size=9"
 };
 
 static const char dmenufont[]       = "Tewi:size=9";
 static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#222222";
+static const char normfgcolor[]     = "#eeeeee";
+static const char normbgcolor[]     = "#4d4d4c";
+static const char selbordercolor[]  = "#4271ae";
+static const char selbgcolor[]      = "#4271ae";
 static const char selfgcolor[]      = "#eeeeee";
-static unsigned int baralpha        = 0xd0;
+static unsigned int baralpha        = 0xFF;
 static unsigned int borderalpha     = OPAQUE;
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const unsigned int gappx     = 6;
+static const unsigned int gappx     = 4;
 
 /* tagging */
-static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -107,7 +107,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-    TAGKEYS(                        XK_0,                      9)
 	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} },
 };
 

@@ -1,32 +1,38 @@
-#!/bin/bash
+#!/bin/sh
+
 print_volume() {
 	volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
 	if test "$volume" -gt 0
 	then
-		echo -e "\uE05D${volume}"
+		echo " ${volume}%"
 	else
-		echo -e "Mute"
+		echo " 0%"
 	fi
 }
 
-print_bat(){
+print_wifi() {
+    grep "^\s*w" /proc/net/wireless | awk '{ print "" }'
+    sed "s/down//;s/up//" /sys/class/net/e*/operstate
+}
+print_bat() {
 	hash acpi || return 0
-	onl="$(grep "on-line" <(acpi -V))"
+	onl="$(grep "on-line" < acpi -V)"
 	charge="$(awk '{ sum += $1 } END { print sum }' /sys/class/power_supply/BAT*/capacity)"
 	if test -z "$onl"
 	then
-		echo -e "${charge}"
+		echo "${charge}"
 	else
-		echo -e "${charge}"
+		echo "${charge}"
 	fi
 }
 
 print_date(){
-	date "+%a %m / %d / %y ][ %I:%M %p ]"
+	date "+%a %m / %d / %y ][  %I:%M %p ]"
 }
 
 while true
 do
-	xsetroot -name "[  $(print_bat)% ][  $(print_date)"
-	sleep 1s
+    #xsetroot -name "[ $(print_wifi) ][ $(print_volume) ][  $(print_bat)% ][  $(print_date)"
+    xsetroot -name "[  $(print_bat)% ][  $(print_date)"
+	sleep 1m
 done
