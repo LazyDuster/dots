@@ -4,18 +4,18 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Tewi:size=10",
+	"Tewi:size=9",
 	"Fira Code:size=10",
 	"Siji:size=9"
 };
 
 static const char dmenufont[]       = "Tewi:size=9";
 static const char normbordercolor[] = "#444444";
-static const char normfgcolor[]     = "#eeeeee";
-static const char normbgcolor[]     = "#4d4d4c";
-static const char selbordercolor[]  = "#4271ae";
-static const char selbgcolor[]      = "#4271ae";
-static const char selfgcolor[]      = "#eeeeee";
+static const char normfgcolor[]     = "#FFFFFF";
+static const char normbgcolor[]     = "#314549";
+static const char selbordercolor[]  = "#263238";
+static const char selbgcolor[]      = "#263238";
+static const char selfgcolor[]      = "#FFFFFF";
 static unsigned int baralpha        = 0xFF;
 static unsigned int borderalpha     = OPAQUE;
 static const unsigned int borderpx  = 0;        /* border pixel of windows */

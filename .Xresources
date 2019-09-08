@@ -1,0 +1,42 @@
+! Base16 Material
+*.background: #242E32
+*.foreground: #C4C4B5
+
+! black
+*.color0:  #263238
+*.color8:  #F07178
+
+! red
+*.color1:  #2E3C43
+*.color9:  #F78C6C
+
+! green
+*.color2:  #314549
+*.color10: #FFCB6B
+
+! yellow / orange
+*.color3:  #546E7A
+*.color11: #C3E88D
+
+! blue
+*.color4:  #B2CCD6
+*.color12: #89DDFF
+
+! magenta
+*.color5:  #EEFFFF
+*.color13: #82AAFF
+
+! cyan
+*.color6:  #EEFFFF
+*.color14: #C792EA
+
+! white
+*.color7:  #FFFFFF
+*.color15: #FF5370
+
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.rgba:rgb
+Xft.lcdfilter: lcddefault
