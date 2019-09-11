@@ -4,7 +4,7 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Tewi:size=9",
+	"Tewi:size=8",
 	"Fira Code:size=10",
 	"Siji:size=9"
 };
@@ -68,6 +68,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *upvol[]   = { "amixer", "set", "Master", "3+",     NULL };
 static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
 static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
+static const char *lock[] = {"slock", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -98,6 +99,7 @@ static Key keys[] = {
 	{ MODKEY,                  XK_period,      focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,         XK_comma,      tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,        XK_period,      tagmon,         {.i = +1 } },
+	{ MODKEY|ShiftMask,		   		XK_l,	   spawn,		   {.v = lock} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
