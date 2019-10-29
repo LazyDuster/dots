@@ -14,7 +14,7 @@ static const char normbordercolor[] = "#444444";
 static const char normfgcolor[]     = "#FFFFFF";
 static const char normbgcolor[]     = "#314549";
 static const char selbordercolor[]  = "#263238";
-static const char selbgcolor[]      = "#263238";
+static const char selbgcolor[]      = "#1d1f21"; // 263238
 static const char selfgcolor[]      = "#FFFFFF";
 static unsigned int baralpha        = 0xFF;
 static unsigned int borderalpha     = OPAQUE;
@@ -22,7 +22,7 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const unsigned int gappx     = 4;
+static const unsigned int gappx     = 3;
 
 /* tagging */
 static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九"};
@@ -35,6 +35,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       0,            0,           -1 },
+	{ "Discord",  NULL,       "Discord",       1 << 8,       0,           -1 }
 };
 
 /* layout(s) */

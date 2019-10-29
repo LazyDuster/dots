@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro Medium:pixelsize=12:antialias=true:autohint=true";
+static char *font = "termsyn:pixelsize=12:antialias=true:autohint=true";
 //static char *font = "Tewi:pixelsize=10:antialias=true:autohint=true";
 static int borderpx = 10;
 
@@ -85,7 +85,7 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 unsigned int alpha = 0xFF;
-//unsigned int alpha = 0xcc;
+//unsigned int alpha = 0xaa;
 //unsigned int alpha = 0x00;
 
 /* Terminal colors (16 first used in escape sequence) */
@@ -122,10 +122,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 4;
-unsigned int defaultbg = 2;
-static unsigned int defaultcs = 5;
-static unsigned int defaultrcs = 6;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
