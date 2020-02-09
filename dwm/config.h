@@ -12,13 +12,13 @@ static const char *fonts[] = {
 static const char dmenufont[]       = "Tewi:size=9";
 static const char normbordercolor[] = "#444444";
 static const char normfgcolor[]     = "#FFFFFF";
-static const char normbgcolor[]     = "#314549";
+static const char normbgcolor[]     = "#2b303b"; /* #314549  */
 static const char selbordercolor[]  = "#263238";
-static const char selbgcolor[]      = "#1d1f21"; // 263238
+static const char selbgcolor[]      = "#1d1f21"; /* #1d1f21 */
 static const char selfgcolor[]      = "#FFFFFF";
 static unsigned int baralpha        = 0xFF;
 static unsigned int borderalpha     = OPAQUE;
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */

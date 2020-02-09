@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "termsyn:pixelsize=12:antialias=true:autohint=true";
+static char *font = "tewi:pixelsize=12:antialias=true:autohint=true";
 //static char *font = "Tewi:pixelsize=10:antialias=true:autohint=true";
 static int borderpx = 10;
 
