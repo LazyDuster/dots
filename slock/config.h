@@ -14,6 +14,7 @@ static const int failonclear = 0;
 /* default message */
 /* static const char * message = "כמו למעלה כך למטה"; */
 static const char * message = "Unholy foulness! I will take you with me!";
+//static const char * message = "$(fortune)";
 
 /*  text color */
 static const char * text_color = "#ffffff";
