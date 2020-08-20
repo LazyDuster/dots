@@ -85,8 +85,8 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 unsigned int alpha = 0xFF;
-//unsigned int alpha = 0xaa;
-//unsigned int alpha = 0x00;
+/*unsigned int alpha = 0xaa;
+unsigned int alpha = 0x00;*/
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {

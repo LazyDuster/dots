@@ -13,12 +13,12 @@ static const char dmenufont[]       = "Tewi:size=9";
 static const char normbordercolor[] = "#444444";
 static const char normfgcolor[]     = "#FFFFFF";
 static const char normbgcolor[]     = "#2b303b"; /* #314549  */
-static const char selbordercolor[]  = "#263238";
+static const char selbordercolor[]  = "#817AAE";
 static const char selbgcolor[]      = "#1d1f21"; /* #1d1f21 */
 static const char selfgcolor[]      = "#FFFFFF";
 static unsigned int baralpha        = 0xFF;
 static unsigned int borderalpha     = OPAQUE;
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -66,9 +66,9 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *upvol[]   = { "amixer", "set", "Master", "3+",     NULL };
-static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
-static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
+static const char *upvol[]   = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
 static const char *lock[] = {"slock", NULL};
 
 static Key keys[] = {
