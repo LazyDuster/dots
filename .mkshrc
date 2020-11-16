@@ -1,0 +1,10 @@
+export EDITOR=nvim
+export LANG=en_US.UTF-8
+export CLICOLOR=1
+export PATH="$PATH:/usr/bin/:/bin:usr/lib/node_modules"
+HISTFILE=$HOME/.ksh_history
+HISTSIZE=20000
+
+alias ls='ls --color=auto -FHh'
+
+PS1='[$PWD] '

@@ -14,6 +14,7 @@ print_wifi() {
     grep "^\s*w" /proc/net/wireless | awk '{ print "" }'
     sed "s/down//;s/up//" /sys/class/net/e*/operstate
 }
+
 print_bat() {
 	hash acpi || return 0
 	onl="$(grep "on-line" < acpi -V)"
@@ -26,13 +27,19 @@ print_bat() {
 	fi
 }
 
-print_date(){
+print_date() {
 	date "+%a %m / %d / %y ][  %I:%M %p ]"
+}
+
+print_cpu() {
+	temp="$(awk '{ cpu1=$1/1000;cpu2=$2/1000; } END { print "CPU1: ", cpu1, " ", "CPU2: ", cpu2 }' /sys/class/thermal/thermal_zone*/temp)"
+	echo "${temp}"
 }
 
 while true
 do
     #xsetroot -name "[ $(print_wifi) ][ $(print_volume) ][  $(print_bat)% ][  $(print_date)"
+    #xsetroot -name "[ $(print_cpu) ][  $(print_bat)% ][  $(print_date)"
     xsetroot -name "[  $(print_bat)% ][  $(print_date)"
 	sleep 1m
 done
