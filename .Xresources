@@ -1,39 +1,41 @@
-! Base16 Material
-*.background: #242E32
-*.foreground: #C4C4B5
+! special
+*.foreground:   #D8DEE9
+*.background:   #2E3440
 
 ! black
-*.color0:  #263238
-*.color8:  #F07178
+*.color0:       #3B4252
+*.color8:       #4C566A
 
 ! red
-*.color1:  #2E3C43
-*.color9:  #F78C6C
+*.color1:       #BF616A
+*.color9:       #8F616A
 
 ! green
-*.color2:  #314549
-*.color10: #FFCB6B
+*.color2:       #A38E8C
+*.color10:      #A38E8C
 
-! yellow / orange
-*.color3:  #546E7A
-*.color11: #C3E88D
+! yellow
+*.color3:       #EBCB8B
+*.color11:      #EBCB8B
 
 ! blue
-*.color4:  #B2CCD6
-*.color12: #89DDFF
+*.color4:       #81A1C1
+*.color12:      #81A1C1
 
 ! magenta
-*.color5:  #EEFFFF
-*.color13: #82AAFF
+*.color5:       #B48EAD
+*.color13:      #B48EAD
 
 ! cyan
-*.color6:  #EEFFFF
-*.color14: #C792EA
+*.color6:       #88C0D0
+*.color14:      #8FBCBB
 
 ! white
-*.color7:  #FFFFFF
-*.color15: #FF5370
+*.color7:       #E5E9F0
+*.color15:      #ECEFF4
 
+!*fading: 35
+!*fadeColor: #4C566A
 Xft.autohint: 1
 Xft.antialias: 1
 Xft.hinting: true
